@@ -90,9 +90,7 @@ private void setupPager() {
         @Override
         public void onPageScrollStateChanged(int state) {
             tabs.onPageScrollStateChanged(state);
-
             scrollState = state;
-
             selectPage(pager.getCurrentItem());
         }
     });
@@ -138,8 +136,8 @@ private void setupTabs() {
 ```JAVA
 @Override
 protected void onInit() {
-	TextView tv = (TextView) getView().findViewById(R.id.tv_aaa);
-	tv.setText("qqqqq");
+    TextView tv = (TextView) getView().findViewById(R.id.tv_aaa);
+    tv.setText("qqqqq");
 }    
 ```
 如果想提交加载的话只需要执行一下`FragMainTab`中的`onCurrent()`方法即可。

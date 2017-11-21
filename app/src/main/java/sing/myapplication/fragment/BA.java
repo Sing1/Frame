@@ -16,7 +16,7 @@ public class BA extends FragMainTab {
 
     @Override
     protected void onInit() {
-        TextView tv = getView().findViewById(R.id.tv_aaa);
+        TextView tv = (TextView) getView().findViewById(R.id.tv_aaa);
         tv.setText("qqqqq");
     }
 }

@@ -214,8 +214,8 @@ public class PagerSlidingTabStrip extends HorizontalScrollView implements OnPage
         ImageView tabPicIV;
         for (int i = 0; i < childCount; ++i) {
             tabView = (LinearLayout) tabsContainer.getChildAt(i);
-            textView = (TextView) tabView.findViewById(R.id.tab_title_label);
-            tabPicIV = (ImageView) tabView.findViewById(R.id.image_tab_label);
+            textView = (TextView) tabView.findViewById(R.id.tab_title);
+            tabPicIV = (ImageView) tabView.findViewById(R.id.tab_image);
             if (i == position) {
                 textView.setTextColor(getResources().getColor(checkedTextColor));
                 if (null != tabPicIV) {

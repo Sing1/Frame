@@ -53,9 +53,7 @@ public class ActMain extends AppCompatActivity {
 
         adapter = new TabAdapter(getSupportFragmentManager(), this, list);
         pager.setOffscreenPageLimit(adapter.getCacheCount());
-        // page swtich animation
         pager.setPageTransformer(true, new FadeInOutPageTransformer());
-        // ADAPTER
         pager.setAdapter(adapter);
 
         pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

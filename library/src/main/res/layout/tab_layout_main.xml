@@ -18,7 +18,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/image_tab_label"
+                android:id="@+id/tab_image"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:scaleType="fitXY" />
@@ -34,7 +34,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/tab_title_label"
+        android:id="@+id/tab_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
